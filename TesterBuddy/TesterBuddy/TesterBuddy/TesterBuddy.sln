@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.0.0.7070
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesterBuddy", "TesterBuddy.csproj", "{8C6E0CEF-DAA4-4C21-830A-D2336E1E36C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C6E0CEF-DAA4-4C21-830A-D2336E1E36C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C6E0CEF-DAA4-4C21-830A-D2336E1E36C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C6E0CEF-DAA4-4C21-830A-D2336E1E36C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C6E0CEF-DAA4-4C21-830A-D2336E1E36C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+EndGlobal

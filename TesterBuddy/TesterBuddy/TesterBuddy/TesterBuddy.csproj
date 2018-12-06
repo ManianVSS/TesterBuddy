@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{8C6E0CEF-DAA4-4C21-830A-D2336E1E36C4}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TesterBuddy</RootNamespace>
+    <AssemblyName>TesterBuddy</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SourceAnalysisOverrideSettingsFile>C:\Documents and Settings\Administrator\Application Data\ICSharpCode/SharpDevelop3.0\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
+    <RunSourceAnalysis>False</RunSourceAnalysis>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <ApplicationIcon>images.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>Full</DebugType>
+    <StartAction>Project</StartAction>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugType>None</DebugType>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <PlatformTarget>x86</PlatformTarget>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="API.cs" />
+    <Compile Include="APIResultsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APIResultsForm.Designer.cs">
+      <DependentUpon>APIResultsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CounterBasedDataGen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CounterBasedDataGen.Designer.cs">
+      <DependentUpon>CounterBasedDataGen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditClientPropertiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditClientPropertiesForm.Designer.cs">
+      <DependentUpon>EditClientPropertiesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileSplitter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileSplitter.Designer.cs">
+      <DependentUpon>FileSplitter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.SettingHandler.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReplaceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReplaceForm.Designer.cs">
+      <DependentUpon>ReplaceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenShot.cs" />
+    <Compile Include="ScreenShotPictureBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScreenShotPictureBox.Designer.cs">
+      <DependentUpon>ScreenShotPictureBox.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="APIResultsForm.resx">
+      <DependentUpon>APIResultsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CounterBasedDataGen.resx">
+      <DependentUpon>CounterBasedDataGen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditClientPropertiesForm.resx">
+      <DependentUpon>EditClientPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileSplitter.resx">
+      <DependentUpon>FileSplitter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScreenShotPictureBox.resx">
+      <DependentUpon>ScreenShotPictureBox.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ArchiveHelper\ArchiveHelper.csproj">
+      <Project>{16F249F8-C101-44D3-8A14-65A447A54A38}</Project>
+      <Name>ArchiveHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DataGenerate\DataGenerate\DataGenerate.csproj">
+      <Project>{EE498E83-AD55-44B3-87F8-81636872D1B6}</Project>
+      <Name>DataGenerate</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\HostUtil\HostUtil\HostUtil.csproj">
+      <Project>{409FD9E9-58F3-4534-940A-6B26E8850ED8}</Project>
+      <Name>HostUtil</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\HostUtil\HostUtil\HostUtil.csproj">
+      <Project>{409FD9E9-58F3-4534-940A-6B26E8850ED8}</Project>
+      <Name>HostUtil</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Settings\Settings\Settings.csproj">
+      <Project>{AE7611D1-FC66-4186-A6AA-B8E8BEC50415}</Project>
+      <Name>Settings</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Settings\Settings\Settings.csproj">
+      <Project>{AE7611D1-FC66-4186-A6AA-B8E8BEC50415}</Project>
+      <Name>Settings</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\STAFAL\STAFAL.csproj">
+      <Project>{cca60270-afcb-40f6-824b-536c510619f2}</Project>
+      <Name>STAFAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WebRequestHelper\WebRequestHelper\WebRequestHelper.csproj">
+      <Project>{96C67C4F-DCDF-4398-B855-1F5ACAF2EB10}</Project>
+      <Name>WebRequestHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\XMLUtils\XMLUtils\XMLUtils.csproj">
+      <Project>{AB1931EF-907D-423E-9F2A-9ABAF00C5DB8}</Project>
+      <Name>XMLUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\XMLUtils\XMLUtils\XMLUtils.csproj">
+      <Project>{AB1931EF-907D-423E-9F2A-9ABAF00C5DB8}</Project>
+      <Name>XMLUtils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+</Project>
